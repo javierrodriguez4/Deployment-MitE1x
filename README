@@ -1,0 +1,5 @@
+Requisitos previos
+
+Sistema operativo Windows 10 y Windows server
+previamente se debe ejecutar el siguiente comando en powershell como administrador
+Set-ExecutionPolicy Unrestricted -Scope LocalMachine -Force
