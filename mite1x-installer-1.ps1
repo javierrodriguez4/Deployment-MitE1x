@@ -186,9 +186,9 @@ Download-FileFromUrl -url $sqlncliUrl -outputPath $sqlncliPath
 
 # Mostrar mensaje para instalación manual
 Add-Type -AssemblyName System.Windows.Forms
-[System.Windows.Forms.MessageBox]::Show("El archivo `sqlncli.msi` está en la ruta $sqlncliPath. Debe instalarse manualmente para que la aplicación MitE1x funcione correctamente. Por favor, haga clic en Aceptar para continuar.", "Instalación Manual Requerida", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+[System.Windows.Forms.MessageBox]::Show("El archivo `sqlncli.msi` está en la ruta $sqlncliPath. Debe instalarse manualmente para que la aplicacion MitE1x funcione correctamente. Por favor, haga clic en Aceptar para continuar.", "Instalacion Manual Requerida", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
 
-Write-Log "El archivo sqlncli.msi ha sido descargado y está listo para la instalación manual."
+Write-Log "El archivo sqlncli.msi ha sido descargado y esta listo para la instalación manual."
 
 # Mostrar mensaje de reinicio y contador de 10 segundos
 $confirmRestart = [System.Windows.Forms.MessageBox]::Show("El servidor se va a reiniciar. Presione Aceptar para iniciar un contador de 10 segundos antes del reinicio.", "Reinicio del Servidor", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Warning)
